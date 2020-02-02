@@ -6,6 +6,8 @@ public class QuickSort {
         arr[i] = arr[j]; 
         arr[j] = swap;
 	}
+	
+	
 	public static void quickSort(int arr[], int begin, int end) {
 	    if (begin < end) {
 	        int partitionIndex = partition(arr, begin, end);
@@ -22,7 +24,6 @@ public class QuickSort {
 		    for (int j = begin; j < end; j++) {
 		        if (arr[j] <= pivot) {
 		            i++;
-		 
 		            swapVariables(arr, i,j);
 		        }
 		    }
