@@ -10,11 +10,7 @@ public class MergeSort {
         int[] left = sort(subArray(array, 0, pivot));				// get the left  side of array to pivot
         int[] right = sort(subArray(array, pivot, array.length));	// get the right side of array to pivot
         int[] mergedAndSortedArray = merge(left, right);			// passing arrays to process merge operation
-        
-        System.out.println("\nNumbers after Iteration");
-	      for(int ka=0;ka<mergedAndSortedArray.length;ka++)
-	    	  System.out.print(mergedAndSortedArray[ka]+", ");
-	      
+       
         return mergedAndSortedArray;
     }
 
